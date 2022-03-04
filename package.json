@@ -1,0 +1,25 @@
+{
+  "name": "await-modal-submit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjdgustn/await-modal-submit.git"
+  },
+  "author": "HYONSU",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/wjdgustn/await-modal-submit/issues"
+  },
+  "homepage": "https://github.com/wjdgustn/await-modal-submit#readme",
+  "devDependencies": {
+    "discord.js": "^14.0.0-dev.1646395406.6f7a366"
+  },
+  "dependencies": {
+    "unique-string": "^2.0.0"
+  }
+}
