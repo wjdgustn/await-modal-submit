@@ -23,7 +23,10 @@ module.exports = client => {
                 }
             });
 
-            if(time && waitingModal[customId]) setTimeout(() => waitingModal[customId].reject(new Error('Modal timeout')), time);
+            if(time && waitingModal[customId]) setTimeout(() => {
+                waitingModal[customId].reject(new Error('Modal timeout'));
+                delete waitingModal[customId];
+            }, time);
 
             return promise;
         }
