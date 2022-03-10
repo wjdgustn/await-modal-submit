@@ -23,8 +23,8 @@ module.exports = client => {
                 }
             });
 
-            if(time && waitingModal[customId]) setTimeout(() => {
-                waitingModal[customId].reject(new Error('Modal timeout'));
+            if(time) setTimeout(() => {
+                waitingModal[customId]?.reject(new Error('Modal timeout'));
                 delete waitingModal[customId];
             }, time);
 
