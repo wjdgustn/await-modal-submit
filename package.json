@@ -1,6 +1,6 @@
 {
   "name": "await-modal-submit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/wjdgustn/await-modal-submit#readme",
   "devDependencies": {
-    "discord.js": "^14.0.0-dev.1646395406.6f7a366"
+    "discord.js": "^14.0.2"
   },
   "dependencies": {
     "unique-string": "^2.0.0"

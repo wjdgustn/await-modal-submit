@@ -1,10 +1,12 @@
+const { InteractionType } = require('discord.js');
+
 const uniqueString = require('unique-string');
 
 const waitingModal = {};
 
 module.exports = client => {
     client.on('interactionCreate', interaction => {
-        if(interaction.isModalSubmit() && waitingModal[interaction.customId]) {
+        if(interaction.type === InteractionType.ModalSubmit && waitingModal[interaction.customId]) {
             waitingModal[interaction.customId].resolve(interaction);
             delete waitingModal[interaction.customId];
         }
